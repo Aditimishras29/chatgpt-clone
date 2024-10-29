@@ -1,9 +1,9 @@
 import './signUpPage.css'
 
-const signUpPage =() => {
+const SignUpPage =() => {
     return (
-        <div className='signUpPage'>signUpPage</div>
+        <div className='signUpPage'>SignUpPage</div>
     )
 }
 
-export default signUpPage
+export default SignUpPage
