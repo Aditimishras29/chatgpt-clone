@@ -8,6 +8,7 @@ import DashboardPage from "./routes/dashboardPage/DashboardPage.jsx";
 import ChatPage from "./routes/chatPage/ChatPage.jsx";
 import RootLayout from "./routes/layouts/rootLayout/rootLayout.jsx";
 
+
 const router = createBrowserRouter([
   {
    elemnt:<RootLayout/>,
@@ -16,6 +17,20 @@ const router = createBrowserRouter([
       path:"/",
       element: <Homepage/>,
     },
+    {
+      element:<DashboardLayout/>,
+      Children:[
+        {
+          path:"/dashboard",
+          element:<DashboardPage/>
+        },
+        {
+          path:"/dashboard/chats/:id",
+          element:<ChatPage/>
+        },
+
+      ],
+    },
    ],
   },
 ]);
@@ -23,5 +38,5 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </React.StrictMode>   
 );

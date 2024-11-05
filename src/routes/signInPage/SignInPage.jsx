@@ -2,7 +2,8 @@ import './signInPage.css'
 
 const SignInPage =() => {
     return (
-        <div className='signInPage'>SignInPage</div>
+        <div className='signInPage'>
+            <SignIn path="/sign-in" /></div>
     )
 }
 
