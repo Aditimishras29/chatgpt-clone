@@ -5,26 +5,26 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Homepage from "./routes/homepage/Homepage.jsx";
 import DashboardPage from "./routes/dashboardPage/DashboardPage.jsx";
 import ChatPage from "./routes/chatPage/ChatPage.jsx";
-import RootLayout from "./routes/layouts/rootLayout/RootLayout.jsx";
-import DashboardLayout from "./routes/layouts/dashboardLayout/DashboardLayout.jsx";
-import SignUpPage from "./routes/signUpPage/signUpPage.jsx";
+import RootLayout from "./layouts/rootLayout/RootLayout.jsx";
+import DashboardLayout from "./layouts/dashboardLayout/DashboardLayout.jsx";
 import SignInPage from "./routes/signInPage/signInPage.jsx";
+import SignUpPage from "./routes/signUpPage/signUpPage.jsx";
 
 const router = createBrowserRouter([
   {
-    elemnt: <RootLayout />,
+    element: <RootLayout />,
     children: [
-      {
-        path:"/sign-in/*",
-        element: <SignInPage />,
-      },
-      {
-        path:"/sign-up/*",
-        element: <SignUpPage />,
-      },
       {
         path: "/",
         element: <Homepage />,
+      },
+      {
+        path: "/sign-in",
+        element: <SignInPage />,
+      },
+      {
+        path: "/sign-up",
+        element: <SignUpPage />,
       },
       {
         element: <DashboardLayout />,
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
             element: <DashboardPage />,
           },
           {
-            path: "/dashboard/chats/:id",
+            path: '/dashboard/chats/:id',
             element: <ChatPage />,
           },
         ],
