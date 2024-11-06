@@ -2,6 +2,16 @@ import{outlet} from "react-router-dom";
 import "./dashboardLayout.css";
 
 const dashboardLayout =() =>{
+
+
+
+
+    
+
+
+
+
+
     return(
         <div className="dashboardLayout">
             <div className="menu">MENU</div>

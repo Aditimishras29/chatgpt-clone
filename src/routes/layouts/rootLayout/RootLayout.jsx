@@ -17,9 +17,6 @@ const RootLayout =()=> {
                 <span>ADITI AI</span>
                 </Link>
                 <div className="user">
-                <SignedOut>
-        <SignInButton />
-      </SignedOut>
       <SignedIn>
         <UserButton />
       </SignedIn>

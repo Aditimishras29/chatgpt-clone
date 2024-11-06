@@ -7,12 +7,22 @@ import Homepage from "./routes/homepage/Homepage.jsx";
 import DashboardPage from "./routes/dashboardPage/DashboardPage.jsx";
 import ChatPage from "./routes/chatPage/ChatPage.jsx";
 import RootLayout from "./routes/layouts/rootLayout/rootLayout.jsx";
+import { SignIn } from "@clerk/clerk-react";
+import { SignUp } from "@clerk/clerk-react";
 
 
 const router = createBrowserRouter([
   {
    elemnt:<RootLayout/>,
    Children: [
+    {
+      path:"/sign-in/*",
+      element: <SignInPage/>,
+    },
+    {
+      path:"/sign-up/*",
+      element: <sign-up/>,
+    },
     {
       path:"/",
       element: <Homepage/>,

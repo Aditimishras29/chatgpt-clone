@@ -2,7 +2,9 @@ import './signUpPage.css'
 
 const SignUpPage =() => {
     return (
-        <div className='signUpPage'>SignUpPage</div>
+        <div className='signUpPage'>
+            <SignUp path="/sign-up" />
+</div>
     )
 }
 
