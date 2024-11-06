@@ -1,3 +1,4 @@
+import { SignUp } from '@clerk/clerk-react'
 import './signUpPage.css'
 
 const SignUpPage =() => {
@@ -8,4 +9,4 @@ const SignUpPage =() => {
     )
 }
 
-export default SignUpPage
+export default SignUpPage;

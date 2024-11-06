@@ -1,27 +1,15 @@
-import{outlet} from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import "./dashboardLayout.css";
 
-const dashboardLayout =() =>{
-
-
-
-
-    
-
-
-
-
-
-    return(
-        <div className="dashboardLayout">
-            <div className="menu">MENU</div>
-            <div className="content">
-                <outlet/>
-            </div>
-        </div>
-    );
+const DashboardLayout = () => {
+  return (
+    <div className="dashboardLayout">
+      <div className="menu">MENU</div>
+      <div className="content">
+        <Outlet />
+      </div>
+    </div>
+  );
 };
 
-export default dashboardLayout;
-
-
+export default DashboardLayout;
